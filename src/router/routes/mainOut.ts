@@ -17,6 +17,15 @@ export const mainOutRoutes: AppRouteModule[] = [
       ignoreAuth: true,
     },
   },
+  {
+    path: '/form-designer',
+    name: 'FormDesigner',
+    component: () => import('@/views/demo/form-designer/index.vue'),
+    meta: {
+      title: 'FormDesigner',
+      ignoreAuth: true,
+    },
+  },
 ];
 
 export const mainOutRouteNames = mainOutRoutes.map((item) => item.name);
